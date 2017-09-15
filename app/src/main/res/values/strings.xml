@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NBD</string>
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="please_input_limit_pwd">请输入数字或字母</string>
+    <string name="please_input_limit_pwd_length">密码长度六位以上</string>
+    <string name="login">登录</string>
+    <string name="hint_login_username">请输入用户名</string>
+    <string name="hint_login_password">输入密码</string>
+    <string name="Registering_new_user">注册新用户</string>
+    <string name="register_hint">注册</string>
+    <string name="search_hint">搜索</string>
+    <string name="settings_hint">设置</string>
+    <string name="comments_and_feedback_hint">意见与反馈</string>
+    <string name="push_hint">推送</string>
+    <string name="text_mode_hint">文字模式</string>
+    <string name="night_mode_hint">夜间模式</string>
+    <string name="immediate_login_hint">即刻登录</string>
+    <string name="login_suc">登录成功！！！</string>
+    <string name="login_f">登录失败！！！</string>
+</resources>

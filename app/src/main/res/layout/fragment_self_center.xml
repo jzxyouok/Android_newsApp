@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/self_center_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgItemWhite"
+     >
+
+    <RelativeLayout
+        android:id="@id/self_center_set_layout"
+        android:layout_width="@dimen/custom_gap_100"
+        android:layout_height="@dimen/custom_gap_70"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/custom_page_hor_padding">
+
+        <TextView
+            android:id="@id/self_center_set_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="设置"
+            android:textColor="@color/custom_grey"
+            android:textSize="@dimen/font_text_size_24" />
+
+        <ImageView
+            android:id="@id/self_center_setting_btn"
+            android:layout_width="@dimen/custom_gap_30"
+            android:layout_height="@dimen/custom_gap_30"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/custom_gap_15"
+            android:layout_toLeftOf="@id/self_center_set_text"
+            android:background="@mipmap/self_center_setting_btn"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/self_center_head_img_circle"
+        android:layout_width="@dimen/self_center_headimg_circle_width"
+        android:layout_height="@dimen/self_center_headimg_circle_width"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/main_self_head_top_gap">
+
+        <ImageButton
+            android:id="@id/self_center_head_img"
+            android:layout_width="@dimen/self_center_headimg_width"
+            android:layout_height="@dimen/self_center_headimg_width"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/self_center_default_head"
+            android:clickable="false"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/self_center_login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_self_name_text_height"
+        android:layout_below="@id/self_center_head_img_circle"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="点击登录"
+        android:textColor="@color/textBlack"
+        android:textSize="@dimen/font_text_size_30" />
+
+    <TextView
+        android:id="@id/self_center_message_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_below="@id/self_center_login_text"
+        android:background="@color/custom_divline" />
+
+    <LinearLayout
+        android:id="@id/self_center_message_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/points_activity_rule_title_height"
+        android:layout_below="@id/self_center_message_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:id="@id/slef_center_message_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@id/self_center_message_icon"
+                    android:layout_width="@dimen/custom_gap_30"
+                    android:layout_height="@dimen/custom_gap_30"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/self_center_message_icon" />
+
+                <TextView
+                    android:id="@id/self_center_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/custom_gap_15"
+                    android:layout_toRightOf="@id/self_center_message_icon"
+                    android:text="消息"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <TextView
+                    android:id="@id/self_center_message_point"
+                    android:layout_width="@dimen/column_checked_point_width"
+                    android:layout_height="@dimen/column_checked_point_width"
+                    android:layout_alignTop="@id/self_center_message_text"
+                    android:layout_toRightOf="@id/self_center_message_text"
+                    android:background="@drawable/circle_shape_hightlight"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/custom_divline_width"
+            android:layout_height="@dimen/points_activity_rule_gap_line_height"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:id="@id/self_center_sign_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@id/self_center_sign_icon"
+                    android:layout_width="@dimen/custom_gap_30"
+                    android:layout_height="@dimen/custom_gap_30"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/self_center_sign_icon" />
+
+                <TextView
+                    android:id="@id/self_center_sign_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/custom_gap_15"
+                    android:layout_toRightOf="@id/self_center_sign_icon"
+                    android:text="签到"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_30" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@id/self_center_message_gap"
+        layout="@layout/custom_gap_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/self_center_message_layout" />
+
+    <LinearLayout
+        android:id="@id/self_center_top_four_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_center_top_four_height"
+        android:layout_below="@id/self_center_message_gap"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@id/self_center_sc_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@id/self_center_sc_tag"
+                    android:layout_width="@dimen/self_center_top_four_item_heigth"
+                    android:layout_height="@dimen/self_center_top_four_item_heigth"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/self_center_tag_sc" />
+
+                <TextView
+                    android:id="@id/sc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/self_center_sc_tag"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/custom_gap_20"
+                    android:text="收藏"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_24" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/custom_divline_width"
+            android:layout_height="@dimen/self_center_top_four_line_height"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/self_center_yd_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@id/self_center_yd_tag"
+                    android:layout_width="@dimen/self_center_top_four_item_heigth"
+                    android:layout_height="@dimen/self_center_top_four_item_heigth"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/self_center_tag_yd" />
+
+                <TextView
+                    android:id="@id/yd_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/self_center_yd_tag"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/custom_gap_20"
+                    android:text="阅读"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_24" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/custom_divline_width"
+            android:layout_height="@dimen/self_center_top_four_line_height"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/self_center_pl_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@id/self_center_pl_tag"
+                    android:layout_width="@dimen/self_center_top_four_item_heigth"
+                    android:layout_height="@dimen/self_center_top_four_item_heigth"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/self_center_tag_pl" />
+
+                <TextView
+                    android:id="@id/pl_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/self_center_pl_tag"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/custom_gap_20"
+                    android:text="评论 "
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_24" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="@dimen/custom_divline_width"
+            android:layout_height="@dimen/self_center_top_four_line_height"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/self_center_jb_layout"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@id/self_center_jb_tag"
+                    android:layout_width="@dimen/self_center_top_four_width_24"
+                    android:layout_height="@dimen/self_center_top_four_item_heigth"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/self_center_tag_jb" />
+
+                <TextView
+                    android:id="@id/jb_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/self_center_jb_tag"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/custom_gap_20"
+                    android:text="积分"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_24" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@id/self_center_top_four_gap"
+        layout="@layout/custom_gap_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/self_center_top_four_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/self_center_top_four_gap"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+             <RelativeLayout
+                android:id="@id/self_center_night_mode_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/self_center_item_height"
+                 >
+
+                <ImageView
+                    android:id="@id/self_center_night_mode_tag"
+                    android:layout_width="@dimen/self_center_item_tag_width"
+                    android:layout_height="@dimen/self_center_item_tag_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_hor_padding"
+                    android:background="@mipmap/self_center_tag_nightmode" />
+
+                <TextView
+                    android:id="@id/night_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_item_hor_gap"
+                    android:layout_toRightOf="@id/self_center_night_mode_tag"
+                    android:text="@string/night_mode_hint"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <ToggleButton
+                    android:id="@id/self_center_night_toggle"
+                    android:layout_width="@dimen/self_center_attr_switch_width"
+                    android:layout_height="@dimen/self_center_attr_switch_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/self_center_hor_padding"
+                    android:background="@drawable/switch_btn"
+                    android:clickable="true"
+                    android:maxHeight="@dimen/self_center_attr_switch_height"
+                    android:maxWidth="@dimen/self_center_attr_switch_width"
+                    android:textOff="@null"
+                    android:textOn="@null" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/night_mode_gap_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_divline_width"
+                android:layout_below="@id/self_center_night_mode_layout"
+                android:layout_marginLeft="@dimen/custom_page_hor_padding"
+                android:layout_marginRight="@dimen/custom_page_hor_padding"
+                android:background="@color/custom_divline" />
+
+            <RelativeLayout
+                android:id="@id/self_center_text_mode_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/self_center_item_height"
+                android:layout_below="@id/night_mode_gap_line">
+
+                <ImageView
+                    android:id="@id/self_center_text_mode_tag"
+                    android:layout_width="@dimen/self_center_item_tag_width"
+                    android:layout_height="@dimen/self_center_item_tag_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_hor_padding"
+                    android:background="@mipmap/self_center_tag_textmode" />
+
+                <TextView
+                    android:id="@id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_item_hor_gap"
+                    android:layout_toRightOf="@id/self_center_text_mode_tag"
+                    android:text="@string/text_mode_hint"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <ToggleButton
+                    android:id="@id/self_center_text_toggle"
+                    android:layout_width="@dimen/self_center_attr_switch_width"
+                    android:layout_height="@dimen/self_center_attr_switch_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/self_center_hor_padding"
+                    android:background="@drawable/switch_btn"
+                    android:clickable="true"
+                    android:maxHeight="@dimen/self_center_attr_switch_height"
+                    android:maxWidth="@dimen/self_center_attr_switch_width"
+                    android:textOff="@null"
+                    android:textOn="@null" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/text_mode_gap"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_divline_width"
+                android:layout_below="@id/self_center_text_mode_layout"
+                android:layout_marginLeft="@dimen/custom_page_hor_padding"
+                android:layout_marginRight="@dimen/custom_page_hor_padding"
+                android:background="@color/custom_divline" />
+
+            <RelativeLayout
+                android:id="@id/self_center_push_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/self_center_item_height"
+                android:layout_below="@id/text_mode_gap">
+
+                <ImageView
+                    android:id="@id/self_center_push_tag"
+                    android:layout_width="@dimen/self_center_item_tag_width"
+                    android:layout_height="@dimen/self_center_item_tag_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_hor_padding"
+                    android:background="@mipmap/self_center_tag_push" />
+
+                <TextView
+                    android:id="@id/push_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_item_hor_gap"
+                    android:layout_toRightOf="@id/self_center_push_tag"
+                    android:text="@string/push_hint"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <ToggleButton
+                    android:id="@id/self_center_push_toggle"
+                    android:layout_width="@dimen/self_center_attr_switch_width"
+                    android:layout_height="@dimen/self_center_attr_switch_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/self_center_hor_padding"
+                    android:background="@drawable/switch_btn"
+                    android:clickable="true"
+                    android:maxHeight="@dimen/self_center_attr_switch_height"
+                    android:maxWidth="@dimen/self_center_attr_switch_width"
+                    android:textOff="@null"
+                    android:textOn="@null" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/push_gap_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_divline_width"
+                android:layout_below="@id/self_center_push_layout"
+                android:layout_marginLeft="@dimen/custom_page_hor_padding"
+                android:layout_marginRight="@dimen/custom_page_hor_padding"
+                android:background="@color/custom_divline" />
+
+            <RelativeLayout
+                android:id="@id/self_center_feedback_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/self_center_item_height"
+                android:layout_below="@id/push_gap_line">
+
+                <ImageView
+                    android:clickable="false"
+                    android:id="@id/self_center_feedback_tag"
+                    android:layout_width="@dimen/self_center_item_tag_width"
+                    android:layout_height="@dimen/self_center_item_tag_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_hor_padding"
+                    android:background="@mipmap/self_center_tag_feedback" />
+
+                <TextView
+                    android:clickable="false"
+                    android:id="@id/feedback_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_item_hor_gap"
+                    android:layout_toRightOf="@id/self_center_feedback_tag"
+                    android:text="@string/comments_and_feedback_hint"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <ImageView
+                    android:clickable="false"
+                    android:layout_width="@dimen/self_enter_arrow_width"
+                    android:layout_height="@dimen/self_enter_arrow_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/self_center_hor_padding"
+                    android:background="@mipmap/self_enter_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/push_feedback_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_divline_width"
+                android:layout_below="@id/self_center_feedback_layout"
+                android:layout_marginLeft="@dimen/custom_page_hor_padding"
+                android:layout_marginRight="@dimen/custom_page_hor_padding"
+                android:background="@color/custom_divline" />
+
+            <RelativeLayout
+                android:id="@id/self_center_setting_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/self_center_item_height"
+                android:background="@drawable/recyler_bg"
+                android:layout_below="@id/push_feedback_line">
+
+                <ImageView
+                    android:clickable="false"
+                    android:id="@id/self_center_setting_tag"
+                    android:layout_width="@dimen/self_center_item_tag_width"
+                    android:layout_height="@dimen/self_center_item_tag_width"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_hor_padding"
+                    android:background="@mipmap/self_center_tag_setting" />
+
+                <TextView
+                    android:clickable="false"
+                    android:id="@id/setting_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/self_center_item_hor_gap"
+                    android:layout_toRightOf="@id/self_center_setting_tag"
+                    android:text="@string/settings_hint"
+                    android:textColor="@color/textBlack"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <ImageView
+                    android:clickable="false"
+                    android:layout_width="@dimen/self_enter_arrow_width"
+                    android:layout_height="@dimen/self_enter_arrow_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/self_center_hor_padding"
+                    android:background="@mipmap/self_enter_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/custom_divline_width"
+                android:layout_below="@id/self_center_setting_layout"
+                android:background="@color/custom_divline" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

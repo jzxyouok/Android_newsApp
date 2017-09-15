@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@id/setting_title_layout"
+        layout="@layout/custom_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@id/self_setting_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_setting_head_layout_height"
+        android:layout_below="@id/setting_title_layout"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:text="头像设置"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/font_text_size_30" />
+
+        <ImageView
+            android:id="@id/self_setting_head_img"
+            android:layout_width="@dimen/self_center_headimg_width"
+            android:layout_height="@dimen/self_center_headimg_width"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_center_hor_padding"
+            android:background="@mipmap/self_center_default_head" />
+    </RelativeLayout>
+
+    <include
+        android:id="@id/self_setting_head_gap"
+        layout="@layout/custom_gap_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/self_setting_head_layout" />
+
+    <LinearLayout
+        android:id="@id/self_setting_name_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/self_setting_head_gap"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/self_setting_name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="昵称"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+
+            <TextView
+                android:id="@id/self_setting_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_setting_right_margin"
+                android:text="RicherHe"
+                android:textColor="@color/custom_text_hint_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+    </LinearLayout>
+
+    <include
+        android:id="@id/self_setting_name_gap"
+        layout="@layout/custom_gap_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/self_setting_name_linear_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/self_setting_name_gap"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/self_setting_exit_layout"
+            android:layout_width="@dimen/register_next_button_width"
+            android:layout_height="@dimen/register_next_button_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/self_setting_exit_top_margin"
+            android:background="@color/custom_red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_size_30" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/pageCover" />
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/register_normal_bg">
+
+    <include
+        android:id="@id/register_title_layout"
+        layout="@layout/custom_title_layout_grey" />
+
+    <ImageView
+        android:id="@id/register_logo_img"
+        android:layout_width="@dimen/common_logo_width"
+        android:layout_height="@dimen/common_logo_width"
+        android:layout_below="@id/register_title_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/custom_gap_80"
+        android:src="@mipmap/nbd_logo" />
+
+    <RelativeLayout
+        android:id="@id/register_phone_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_center_item_height"
+        android:layout_below="@id/register_logo_img"
+        android:layout_marginTop="@dimen/custom_gap_100">
+
+        <ImageView
+            android:id="@id/register_phone_img"
+            android:layout_width="@dimen/login_user_tag_width"
+            android:layout_height="@dimen/login_tag_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_user_tag_left"
+            android:background="@drawable/ic_mobile_flag" />
+
+        <EditText
+            android:id="@id/register_user_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/login_user_tag_left"
+            android:layout_toRightOf="@id/register_phone_img"
+            android:background="@null"
+            android:digits="0123456789-"
+            android:hint="@string/register_phone_hint"
+            android:inputType="phone"
+            android:phoneNumber="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/custom_text_hint_color"
+            android:textSize="@dimen/font_text_size_30" />
+
+        <TextView
+            android:id="@id/register_getphone_num_img"
+            android:layout_width="@dimen/empty_sofa_top"
+            android:layout_height="@dimen/search_input_layout_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_center_hor_padding"
+            android:background="@drawable/bg_btn_login_selected"
+            android:gravity="center"
+            android:text="@string/register_get_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_size_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/register_first_gap"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/register_phone_layout"
+        android:layout_marginLeft="@dimen/custom_gap_40"
+        android:layout_marginRight="@dimen/custom_gap_40"
+        android:background="@color/custom_grey" />
+
+    <RelativeLayout
+        android:id="@id/register_password_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_center_item_height"
+        android:layout_below="@id/register_first_gap">
+
+        <ImageView
+            android:id="@id/register_code_img"
+            android:layout_width="@dimen/login_password_tag_width"
+            android:layout_height="@dimen/login_tag_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_password_tag_left"
+            android:background="@mipmap/login_code_icon" />
+
+        <EditText
+            android:id="@id/register_password_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/login_password_tag_left"
+            android:layout_toRightOf="@id/register_code_img"
+            android:background="@null"
+            android:digits="0123456789-"
+            android:hint="@string/register_code_hint"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/custom_text_hint_color"
+            android:textSize="@dimen/font_text_size_30" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/register_second_gap"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/register_password_layout"
+        android:layout_marginLeft="@dimen/custom_gap_40"
+        android:layout_marginRight="@dimen/custom_gap_40"
+        android:background="@color/custom_grey" />
+
+    <Button
+        android:id="@id/register_button"
+        android:layout_width="@dimen/register_next_button_width"
+        android:layout_height="@dimen/register_next_button_height"
+        android:layout_below="@id/register_second_gap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/custom_gap_90"
+        android:background="@color/comment_line"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/custom_grey"
+        android:textSize="@dimen/font_text_size_30" />
+
+</RelativeLayout>

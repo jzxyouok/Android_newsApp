@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgTitleGrey">
+
+    <include
+        android:id="@id/feedback_title_layout"
+        layout="@layout/custom_title_layout" />
+
+    <TextView
+        android:id="@id/feedback_content_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_title_layout"
+        android:layout_marginLeft="@dimen/custom_page_hor_padding"
+        android:layout_marginTop="@dimen/custom_page_ver_padding"
+        android:text="请输入您的意见与反馈(028-86513978)"
+        android:textColor="@color/custom_grey"
+        android:textSize="@dimen/font_text_size_24" />
+
+    <RelativeLayout
+        android:id="@id/feedback_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/feedback_content_height"
+        android:layout_below="@id/feedback_content_title"
+        android:layout_marginTop="@dimen/custom_page_ver_padding"
+        android:background="@color/bgItemWhite">
+
+        <EditText
+            android:id="@id/feedback_content_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:paddingBottom="@dimen/custom_page_ver_padding"
+            android:paddingLeft="@dimen/custom_page_hor_padding"
+            android:paddingRight="@dimen/custom_page_hor_padding"
+            android:paddingTop="@dimen/custom_page_ver_padding"
+            android:textColor="@color/textBlack"
+            android:textColorHint="@color/custom_text_hint_color"
+            android:textSize="@dimen/font_text_size_30" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@id/feedback_button"
+        android:layout_width="@dimen/login_button_width"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_below="@id/feedback_content_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/login_button_normal"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/custom_grey"
+        android:textSize="@dimen/font_text_size_30" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/pageCover" />
+</RelativeLayout>

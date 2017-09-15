@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/custom_gap_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgTitleGrey">
+
+    <TextView
+        android:id="@id/custon_gap_top_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_alignParentTop="true"
+        android:background="@color/custom_divline" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_below="@id/custon_gap_top_line"
+        android:layout_marginTop="@dimen/custom_gap_v4_height"
+        android:background="@color/custom_divline" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bgItemWhite">#ff000000</color>
+    <color name="bgTitleGrey">#ff323232</color>
+    <color name="pageCover">#66000000</color>
+    <color name="textBlack">#ff7f7e7f</color>
+    <color name="night_page_bg">#ff000000</color>
+    <color name="night_page_click_bg">#ff050505</color>
+</resources>

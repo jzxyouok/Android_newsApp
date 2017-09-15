@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgItemWhite">
+
+    <include
+        android:id="@id/app_setting_title_layout"
+        layout="@layout/custom_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@id/app_setting_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_setting_title_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/app_setting_cache_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="清理缓存"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:id="@id/app_setting_clear_arrow"
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+
+            <TextView
+                android:id="@id/app_setting_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_setting_right_margin"
+                android:text="3.25M"
+                android:textColor="@color/custom_text_hint_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/app_setting_size_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="字号大小"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+
+            <TextView
+                android:id="@id/app_setting_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_setting_right_margin"
+                android:text="中"
+                android:textColor="@color/custom_text_hint_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@id/app_setting_top_gap"
+        layout="@layout/custom_gap_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_setting_top_layout" />
+
+    <LinearLayout
+        android:id="@id/app_setting_mid_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_setting_top_gap"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/app_setting_about_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="关于 "
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/app_setting_notice_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="声明条款"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/app_setting_account_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="账户与安全"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@id/app_setting_mid_gap"
+        layout="@layout/custom_gap_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_setting_mid_layout" />
+
+    <LinearLayout
+        android:id="@id/app_setting_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/app_setting_mid_gap"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/app_setting_update_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="版本更新"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/app_setting_version_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="版本号 "
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <TextView
+                android:id="@id/app_setting_version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:text="V 1.0.0"
+                android:textColor="@color/custom_text_hint_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+    </LinearLayout>
+
+</RelativeLayout>

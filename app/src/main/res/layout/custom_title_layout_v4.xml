@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/logo_title_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/common_title_height"
+    android:background="@color/custom_red">
+
+    <ImageView
+        android:id="@id/logo_title_logo_icon"
+        android:layout_width="@dimen/logo_title_logo_icon_width"
+        android:layout_height="@dimen/logo_title_logo_icon_height"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/nbd_title_logo_v4" />
+
+    <RelativeLayout
+        android:id="@id/logo_title_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/logo_title_logo_icon">
+
+        <TextView
+            android:id="@id/logo_title_search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:text="@string/search_hint"
+            android:textColor="@color/custom_white"
+            android:textSize="@dimen/font_text_size_28" />
+
+        <ImageView
+            android:id="@id/logo_title_search_icon"
+            android:layout_width="@dimen/logo_title_search_icon_width"
+            android:layout_height="@dimen/tab_image_common_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/logo_title_icon_gap"
+            android:layout_toLeftOf="@id/logo_title_search_text"
+            android:background="@mipmap/title_search_icon" />
+    </RelativeLayout>
+</RelativeLayout>

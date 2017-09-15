@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@id/setting_title_layout"
+        layout="@layout/custom_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@id/self_setting_name_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_title_layout"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/self_setting_password_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height"
+            android:layout_below="@id/self_setting_name_layout"
+            android:background="@color/bgItemWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="修改密码"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/self_setting_name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="手机号"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:id="@id/self_setting_phone_arrow"
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+
+            <TextView
+                android:id="@id/self_setting_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_setting_right_margin"
+                android:text="未设置"
+                android:textColor="@color/custom_text_hint_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@id/self_setting_name_gap"
+        layout="@layout/custom_gap_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/self_setting_name_linear_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/self_setting_name_gap"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@id/self_setting_sina_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height"
+            android:layout_below="@id/self_setting_password_layout"
+            android:background="@color/bgItemWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="新浪微博"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+
+            <TextView
+                android:id="@id/self_setting_sina_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_setting_right_margin"
+                android:text="绑定"
+                android:textColor="@color/custom_text_hint_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/self_setting_sina_gap"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/self_setting_weixin_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height"
+            android:layout_below="@id/self_setting_sina_gap"
+            android:background="@color/bgItemWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="腾讯微信 "
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+
+            <TextView
+                android:id="@id/self_setting_weixin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_setting_right_margin"
+                android:text="绑定"
+                android:textColor="@color/custom_text_hint_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/self_setting_weixin_gap"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+
+        <RelativeLayout
+            android:id="@id/self_setting_qq_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/self_center_item_height"
+            android:layout_below="@id/self_setting_weixin_gap"
+            android:background="@color/bgItemWhite">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/self_center_hor_padding"
+                android:text="腾讯QQ "
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/self_enter_arrow_width"
+                android:layout_height="@dimen/self_enter_arrow_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_center_hor_padding"
+                android:background="@mipmap/self_enter_arrow" />
+
+            <TextView
+                android:id="@id/self_setting_qq_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/self_setting_right_margin"
+                android:text="绑定"
+                android:textColor="@color/custom_text_hint_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/self_setting_qq_gap"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@color/custom_divline" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/pageCover" />
+</RelativeLayout>
